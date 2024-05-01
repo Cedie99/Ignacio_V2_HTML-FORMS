@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Make the body fill the viewport height */
+    margin: 0; /* Remove default margin */
+   background-color: black;
+}
+
+.container {
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    width: 500px;
+    padding: 20px; /* Optional padding */
+    background: rgba(42,94,38,0.5);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(42,94,38,0.25);
+    border-radius: 20px;
+    font-family: mv boli;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+}

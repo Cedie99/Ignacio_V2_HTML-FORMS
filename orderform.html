@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="icon" type="image/png" href="pictures/seat logo 2.png">
+    <link rel="stylesheet" href="orderform.css">
+
+</head>
+<body>
+    <div class="logo">   
+    <img src="pictures/Seat Logo.png" alt="">
+    <h1>Savory Bites</h1>
+    <h2>Where Every Bite Tells a Delicious Story</h2>
+    </div> 
+    
+   
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" >
+    </div>
+
+    <div>
+        <label for="dineInTakeOut">Dine In/Deliver:</label>
+        <select id="dineInTakeOut" name="dineInTakeOut">
+            <option value="dineIn">Dine In</option>
+            <option value="takeOut">Deliver</option>
+        </select>
+    </div>
+
+    <div id="deliveryLocation">
+        <!-- This div will be shown only when "Take Out" is selected -->
+        <label for="location">Delivery Location:</label>
+        <input type="text" id="location" name="location">
+    </div>
+
+
+    <div>
+        <label for="comments">Comments/Note:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </div>
+
+    <div id="cart-container">
+        <h3>Cart Items:</h3>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    
+  
+
+    <button type="submit">Place Order</button>
+    <button type="button" onclick="backButton()">Back</button>
+    
+</form>
+
+
+    <script src="orderform.js"></script>
+</body>
+</html>
